@@ -1,25 +1,14 @@
-name: Node.js CI
-
+Name: Starter Workflow Demo
 on:
   push:
-    branches: [ main ]
+    branches: [ $default-branch ]
   pull_request:
-    branches: [ main ]
-
+    branches: [ $default-branch ]
 jobs:
   build:
-    runs-on: [self-hosted, linux, my-runner-github]
-
+    runs-on: ubuntu-latest
     steps:
-      uses: actions/checkout@v2
-      
-    - name: Use Node.js ${{matrix.node-version}}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{matrix.node-version}}
-    - run: 
-        npm install
-        cd frontend
-        npm install
-        npm run build        
+      - uses: actions/checkout@v3
+      - name: demo workflow job
+        run: echo This is a demo start workflow       
 
