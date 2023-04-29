@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: [self-hosted, linux, my-runner-github]
+    runs-on: [self-hosted,Linux]
     steps:
     # - name: git checkout  
     #   uses: actions/checkout@v2
