@@ -15,9 +15,9 @@ jobs:
       with:
         node-version: 16.20.0     
     - run:
-        node app.js
+        pwd
         cd frontend
         echo "hello world"
-        npm run build 
+        pwd
       
 
