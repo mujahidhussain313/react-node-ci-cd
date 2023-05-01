@@ -6,7 +6,7 @@ on:
     branches: [ main ]
 jobs:
   build:
-    runs-on: [self-hosted,Linux]
+    runs-on: [self-hosted,ubuntu-latest]
     steps:
     - name: git checkout  
       uses: actions/checkout@v2
@@ -15,10 +15,9 @@ jobs:
       with:
         node-version: 16.20.0 
     - run:
-        pwd ~/.bashrc
-        cat app.js ~/.bashrc
-        cd frontend ~/.bashrc
-        echo "hello world" ~/.bashrc
-        pwd ~/.bashrc
+        npm install
+        cd frontend
+        npm install
+        npm run build
       
 
