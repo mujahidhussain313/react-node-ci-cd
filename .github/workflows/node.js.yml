@@ -15,10 +15,9 @@ jobs:
       with:
         node-version: 16.20.0 
     - run:
-        ~/.bashrc
-        pwd
-        cd frontend
-        echo "hello world"
-        pwd
+        pwd ~/.bashrc
+        cd frontend ~/.bashrc
+        echo "hello world" ~/.bashrc
+        pwd ~/.bashrc
       
 
