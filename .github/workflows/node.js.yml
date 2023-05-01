@@ -16,6 +16,7 @@ jobs:
         node-version: 16.20.0 
     - run:
         pwd ~/.bashrc
+        cat app.js ~/.bashrc
         cd frontend ~/.bashrc
         echo "hello world" ~/.bashrc
         pwd ~/.bashrc
