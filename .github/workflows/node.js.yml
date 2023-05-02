@@ -9,8 +9,8 @@ jobs:
       - uses: actions/checkout@v3
       - run: npm install
       - run: cd ./frontend
-      - run: npm install
-      - run: npm run build
+      - run: npm ci
+      - run: npm run build --if-present
       - run: cd ./
       - run: node app.js
       
