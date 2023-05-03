@@ -11,6 +11,9 @@ jobs:
       - name: Change Directory
         shell: bash
         run: cd ./frontend
+      - name: Check Directory
+        shell: bash
+        run: pwd
       - run: npm ci
       - name: build
         shell: bash
@@ -18,7 +21,10 @@ jobs:
       - name: Change Directory
         shell: bash
         run: cd ./
-      - name: Change Directory
+      - name: Check Directory
+        shell: bash
+        run: pwd
+      - name: Running node
         shell: bash
         run: npm start
       
