@@ -18,6 +18,8 @@ jobs:
       - name: Change Directory
         shell: bash
         run: cd ./
-      - run: node app.js
+      - name: Change Directory
+        shell: bash
+        run: npm start
       
 
